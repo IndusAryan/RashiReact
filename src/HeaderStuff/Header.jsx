@@ -6,7 +6,7 @@ function Header() {
        
         <div className="flex items-center">
           <img
-            src="public/GuruVM(1).png"
+            src="/assets/GuruVM(1).png"
             alt="Your Logo"
             className="h-14 w-17"
           />
