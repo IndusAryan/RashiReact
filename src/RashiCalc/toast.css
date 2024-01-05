@@ -1,0 +1,29 @@
+
+
+.Toastify__toast-container {
+  border-radius: 28px;
+  background-color: transparent;
+}
+
+.Toastify__toast-body {
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  
+
+  .Toastify__progress-bar {
+    background-color: orange;
+  }
+  @media (max-width: 500px) {
+    .Toastify__toast-container {
+      height: auto;
+      width: auto; 
+      left: 5%; 
+    }
+    .Toastify__toast-body {
+      font-size: 10px; 
+    }
+  }
