@@ -36,7 +36,7 @@ export function MoonLoadingCard() {
     <div className="fixed inset-0 flex items-center rounded-xl justify-center z-50">
       <div className="bg-slate-700 shadow-md rounded-xl p-1 max-w-auto">
         <img
-          src="src/assets/moon.gif"
+          src="/assets/moon.gif"
           alt="Animated Moon"
           className="mx-auto mb-4 w-full h-60 rounded-xl"
         />

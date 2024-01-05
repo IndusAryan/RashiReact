@@ -59,7 +59,7 @@ const SunCalculator = () => {
     <ToastContainer />
     {showCard && (
       <RashiResult
-        imageSrc={`src/assets/Rashis/${sunSign}.jpg`}
+        imageSrc={`/assets/Rashis/${sunSign}.jpg`}
         description={Data.sunSign[sunSign] || "Not available."}
         
       />

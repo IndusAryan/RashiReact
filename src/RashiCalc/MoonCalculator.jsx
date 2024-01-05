@@ -121,7 +121,7 @@ function MoonCalculator() {
     <ToastContainer />
     <div>{showRashiResult && (
         <RashiResult
-          imageSrc={`src/assets/Rashis/${zodiacSign}.jpg`}
+          imageSrc={`/assets/Rashis/${zodiacSign}.jpg`}
           description={Data.moonSign[zodiacSign] || "Not available."}
         />
       )}</div>

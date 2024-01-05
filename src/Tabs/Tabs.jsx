@@ -5,8 +5,8 @@ function Tabs({activeTab, handleTabClick}) {
 
   useEffect(() => {
     // Define image URLs
-    const sunImageUrl = 'src/assets/sunanim.gif';
-    const moonImageUrl = 'src/assets/moon.gif';
+    const sunImageUrl = '/assets/sunanim.gif';
+    const moonImageUrl = '/assets/moon.gif';
 
     // Create image objects to preload
     const sunImage = new Image();
