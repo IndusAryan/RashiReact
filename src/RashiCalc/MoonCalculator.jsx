@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
-import fetchGMTOffset from '../utils/FetchGMToffset';
+import fetchGMTOffset from '../utils/FetchGmtOffset.jsx';
 import '../App.css';
 import TimePicker from '../utils/TimePicker';
 import { MoonLoadingCard } from '../Result/MoonLoading';
