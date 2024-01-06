@@ -9,6 +9,7 @@ import SunCalculator from './RashiCalc/SunCalculator.jsx'
 import { useState } from 'react'
 
 function App() {
+
     const [activeTab, setActiveTab] = useState('sun'); // 'sun' or 'moon'
     const [coverImage, setCoverImage] = useState('/assets/cover.jpg');
 
