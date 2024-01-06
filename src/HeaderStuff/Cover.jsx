@@ -6,7 +6,7 @@ function Cover({coverImage, setCoverImage}) {
   useEffect(() => {
   
     const timer = setTimeout(() => {
-      setCoverImage('src/assets/suncover.jpg');
+      setCoverImage('/assets/suncover.jpg');
     }, 3000);
 
     // Clean up the timer on component unmount
@@ -24,7 +24,7 @@ function Cover({coverImage, setCoverImage}) {
 
    
     <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center text-white">
-      <img src="src/assets/weblogo.png"/>
+      <img src="/assets/weblogo.png"/>
     </div>
   </div>
   )

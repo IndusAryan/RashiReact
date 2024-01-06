@@ -10,15 +10,15 @@ import { useState } from 'react'
 
 function App() {
     const [activeTab, setActiveTab] = useState('sun'); // 'sun' or 'moon'
-    const [coverImage, setCoverImage] = useState('src/assets/cover.jpg');
+    const [coverImage, setCoverImage] = useState('/assets/cover.jpg');
 
     const handleTabClick = (tab) => {
       setActiveTab(tab);
 
       if (tab === 'sun') {
-        setCoverImage('src/assets/suncover.jpg');
+        setCoverImage('/assets/suncover.jpg');
       } else if (tab === 'moon') {
-        setCoverImage('src/assets/mooncover.jpeg');
+        setCoverImage('/assets/mooncover.jpeg');
       }
     };
   

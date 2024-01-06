@@ -12,7 +12,7 @@ const fetchGMTOffset = async (cityName, setGmtOffset) => {
     const timestamp = Math.floor(Date.now() / 1000);
     const apiKey = atob("RUM5S0hQTVVJWUc1");
 
-    const apiUrl = `http://api.timezonedb.com/v2.1/get-time-zone?key=${apiKey}&format=json&by=position&lat=${lat}&lng=${lng}&time=${timestamp}`;
+    const apiUrl = `https://api.timezonedb.com/v2.1/get-time-zone?key=${apiKey}&format=json&by=position&lat=${lat}&lng=${lng}&time=${timestamp}`;
 
     try {
       const response = await axios.get(apiUrl);
