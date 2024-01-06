@@ -74,9 +74,10 @@ function MoonCalculator() {
       // Set moonSign state for RashiResult component
     
       setMoonSign(zodiacSign);
-      setTimeout(()=> {
-      setShowRashiResult(true)}, 4000);
       setZodiacSign(newZodiacSign);
+      setTimeout(()=> {
+      setShowRashiResult(true)}, 500);
+      
       } catch (error) {
         console.error('Error fetching data from vedastro API:', error.message);
         toast.error('Error encountered, Check your connection', {
