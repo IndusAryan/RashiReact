@@ -76,6 +76,7 @@ function MoonCalculator() {
       setMoonSign(zodiacSign);
       setZodiacSign(newZodiacSign);
       setTimeout(()=> {
+      setShowMoonCard(false);
       setShowRashiResult(true)}, 500);
       
       } catch (error) {
@@ -97,9 +98,9 @@ function MoonCalculator() {
 
         setShowMoonCard(true);
     
-        setTimeout(() => {
+        /*setTimeout(() => {
           setShowMoonCard(false);
-        }, 5000);
+        }, 5000);*/
 
         
         setShowRashiResult(false);
