@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const RashiResult = ({ imageSrc, description }) => {
   const [showCard, setShowCard] = useState(true);
-
+ 
   const handleClose = () => {
     setShowCard(false);
   };
+
+  function copy() {
+
+    var copyText = description;
+    navigator.clipboard.writeText(copyText);
+    toast.success("Copied your charecteristics", {position: toast.POSITION.BOTTOM_LEFT} )
+  } 
 
   return (
     <>
@@ -17,10 +25,17 @@ const RashiResult = ({ imageSrc, description }) => {
         <p className="card-description text-center max-w-full text-gray-800 mb-3 mr-3 ml-3 rounded-lg bg-slate-200 p-4 overflow-x-auto">
           {description}
         </p>
-      
+
+      <div className="flex flex-row">
         <button onClick={handleClose} className="close-button text-slate-800 px-4 bg-orange-400 rounded-md py-2 m-4 hover:bg-orange-500 hover:rounded-lg">
           Close
         </button>
+        
+        <button onClick={copy} className="close-button text-slate-800 px-4 bg-orange-500 rounded-md py-2 m-4 hover:bg-orange-400 hover:rounded-lg">
+          Copy
+        </button>
+        </div>
+
       </div>
       )}
     </>
