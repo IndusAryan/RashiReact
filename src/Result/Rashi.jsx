@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 
 const RashiResult = ({ imageSrc, description }) => {
@@ -35,14 +35,6 @@ const RashiResult = ({ imageSrc, description }) => {
           Copy
         </button>
         </div>
-
-        <p className="card-description text-center max-w-full text-gray-800 mb-3 mr-3 ml-3 rounded-lg bg-slate-200 p-4 overflow-x-auto">
-          {description}
-        </p>
-      
-        <button onClick={handleClose} className="close-button text-slate-800 px-4 bg-orange-400 rounded-md py-2 m-4 hover:bg-orange-500 hover:rounded-lg">
-          Close
-        </button>
 
       </div>
       )}
